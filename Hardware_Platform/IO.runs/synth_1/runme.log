@@ -1,0 +1,526 @@
+
+*** Running vivado
+    with args -log design_CPU_System_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_CPU_System_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_CPU_System_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental D:/3/IO/IO.srcs/utils_1/imports/synth_1/design_CPU_System_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/3/IO/IO.srcs/utils_1/imports/synth_1/design_CPU_System_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_CPU_System_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17508
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1270.609 ; gain = 408.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_wrapper' [D:/3/IO/IO.gen/sources_1/bd/design_CPU_System/hdl/design_CPU_System_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_gpio_0_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_gpio_0_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_gpio_1_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_gpio_1_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_gpio_2_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_gpio_2_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_quad_spi_0_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_quad_spi_0_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'design_CPU_System_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'design_CPU_System_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'design_CPU_System_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'design_CPU_System_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'design_CPU_System_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'design_CPU_System_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:399]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_timer_0_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_timer_0_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'design_CPU_System_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:428]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'design_CPU_System_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:428]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'design_CPU_System_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:428]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_CPU_System_axi_timer_0_0' has 26 connections declared, but only 23 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:428]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_uartlite_0_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_uartlite_0_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_axi_uartlite_1_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_uartlite_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_axi_uartlite_1_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_axi_uartlite_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_clk_wiz_1_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_clk_wiz_1_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_mdm_1_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_mdm_1_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_mdm_1_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'M_AXI_AWID' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'M_AXI_ARID' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Data_Addr_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Addr_Strobe_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Byte_Enable_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Data_Write_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Read_Strobe_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7071] port 'LMB_Write_Strobe_0' of module 'design_CPU_System_mdm_1_1' is unconnected for instance 'mdm_1' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'design_CPU_System_mdm_1_1' has 60 connections declared, but only 52 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:503]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_microblaze_0_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_microblaze_0_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_microblaze_0_axi_intc_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_microblaze_0_axi_intc_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_microblaze_0_axi_periph_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:889]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1W4T164' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2319]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1W4T164' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2319]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_170CRXP' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_170CRXP' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_B9F7OU' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2583]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_B9F7OU' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2583]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_JG8WKV' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2715]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_JG8WKV' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2715]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_15AFU5L' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2847]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_15AFU5L' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2847]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1XFTQNC' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2979]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1XFTQNC' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2979]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_KHLLUZ' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3111]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_KHLLUZ' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3111]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_AX5CX6' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3243]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_AX5CX6' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3243]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_LCXXCI' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3609]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_LCXXCI' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3609]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_9K9OIB' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3755]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_auto_pc_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_auto_pc_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_9K9OIB' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3755]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_xbar_0' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_xbar_0' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_CPU_System_xbar_0' is unconnected for instance 'xbar' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2278]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_CPU_System_xbar_0' is unconnected for instance 'xbar' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2278]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_CPU_System_xbar_0' has 40 connections declared, but only 38 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:2278]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_microblaze_0_axi_periph_0' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:889]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_TG1YTN' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3375]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_dlmb_bram_if_cntlr_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_dlmb_bram_if_cntlr_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_dlmb_v10_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_dlmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_dlmb_v10_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_dlmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_CPU_System_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3521]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_CPU_System_dlmb_v10_1' has 25 connections declared, but only 24 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3521]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_ilmb_bram_if_cntlr_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_ilmb_bram_if_cntlr_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_ilmb_v10_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_ilmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_ilmb_v10_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_ilmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'design_CPU_System_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3567]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_CPU_System_ilmb_v10_1' has 25 connections declared, but only 24 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3567]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_lmb_bram_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_lmb_bram_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_lmb_bram_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_lmb_bram_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_CPU_System_lmb_bram_1' is unconnected for instance 'lmb_bram' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3592]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_CPU_System_lmb_bram_1' is unconnected for instance 'lmb_bram' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3592]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_CPU_System_lmb_bram_1' has 16 connections declared, but only 14 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3592]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_TG1YTN' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:3375]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_microblaze_0_xlconcat_0' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_xlconcat_0/synth/design_CPU_System_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_microblaze_0_xlconcat_0' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_xlconcat_0/synth/design_CPU_System_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_CPU_System_rst_clk_wiz_1_100M_1' [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_rst_clk_wiz_1_100M_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_rst_clk_wiz_1_100M_1' (0#1) [D:/3/IO/IO.runs/synth_1/.Xil/Vivado-10484-Swing/realtime/design_CPU_System_rst_clk_wiz_1_100M_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_CPU_System_rst_clk_wiz_1_100M_1' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:878]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_CPU_System_rst_clk_wiz_1_100M_1' is unconnected for instance 'rst_clk_wiz_1_100M' [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:878]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_CPU_System_rst_clk_wiz_1_100M_1' has 10 connections declared, but only 8 given [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:878]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System' (0#1) [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/synth/design_CPU_System.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'design_CPU_System_wrapper' (0#1) [D:/3/IO/IO.gen/sources_1/bd/design_CPU_System/hdl/design_CPU_System_wrapper.v:12]
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In105[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.605 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.605 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.605 ; gain = 513.625
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1381.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0/design_CPU_System_microblaze_0_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_1/design_CPU_System_dlmb_v10_1/design_CPU_System_dlmb_v10_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_v10_1/design_CPU_System_dlmb_v10_1/design_CPU_System_dlmb_v10_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_1/design_CPU_System_ilmb_v10_1/design_CPU_System_dlmb_v10_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_v10_1/design_CPU_System_ilmb_v10_1/design_CPU_System_dlmb_v10_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_1/design_CPU_System_dlmb_bram_if_cntlr_1/design_CPU_System_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_dlmb_bram_if_cntlr_1/design_CPU_System_dlmb_bram_if_cntlr_1/design_CPU_System_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_1/design_CPU_System_ilmb_bram_if_cntlr_1/design_CPU_System_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_ilmb_bram_if_cntlr_1/design_CPU_System_ilmb_bram_if_cntlr_1/design_CPU_System_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_1/design_CPU_System_lmb_bram_1/design_CPU_System_lmb_bram_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_lmb_bram_1/design_CPU_System_lmb_bram_1/design_CPU_System_lmb_bram_1_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0/design_CPU_System_xbar_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_xbar_0/design_CPU_System_xbar_0/design_CPU_System_xbar_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0/design_CPU_System_auto_pc_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_axi_intc_0/design_CPU_System_microblaze_0_axi_intc_0/design_CPU_System_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_microblaze_0_axi_intc_0/design_CPU_System_microblaze_0_axi_intc_0/design_CPU_System_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_CPU_System_i/microblaze_0_axi_intc'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_1/design_CPU_System_mdm_1_1/design_CPU_System_mdm_1_1_in_context.xdc] for cell 'design_CPU_System_i/mdm_1'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_mdm_1_1/design_CPU_System_mdm_1_1/design_CPU_System_mdm_1_1_in_context.xdc] for cell 'design_CPU_System_i/mdm_1'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1_in_context.xdc] for cell 'design_CPU_System_i/clk_wiz_1'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1_in_context.xdc] for cell 'design_CPU_System_i/clk_wiz_1'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_1/design_CPU_System_rst_clk_wiz_1_100M_1/design_CPU_System_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'design_CPU_System_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_rst_clk_wiz_1_100M_1/design_CPU_System_rst_clk_wiz_1_100M_1/design_CPU_System_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'design_CPU_System_i/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0/design_CPU_System_axi_uartlite_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_uartlite_0'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_0'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0/design_CPU_System_axi_gpio_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_0'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_1'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0/design_CPU_System_axi_gpio_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_1'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_uartlite_1'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0/design_CPU_System_axi_uartlite_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_uartlite_1'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_quad_spi_0'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_0_0/design_CPU_System_axi_quad_spi_1_0_in_context.xdc] for cell 'design_CPU_System_i/axi_quad_spi_0'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_2'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0/design_CPU_System_axi_gpio_2_0_in_context.xdc] for cell 'design_CPU_System_i/axi_gpio_2'
+Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_timer_0'
+Finished Parsing XDC File [d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0/design_CPU_System_axi_timer_0_0_in_context.xdc] for cell 'design_CPU_System_i/axi_timer_0'
+Parsing XDC File [D:/3/IO/IO.srcs/constrs_1/new/adda.xdc]
+Finished Parsing XDC File [D:/3/IO/IO.srcs/constrs_1/new/adda.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/3/IO/IO.srcs/constrs_1/new/adda.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_CPU_System_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_CPU_System_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/3/IO/IO.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/3/IO/IO.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1474.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1474.602 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_CPU_System_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_CPU_System_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  d:/3/IO/IO.gen/sources_1/bd/design_CPU_System/ip/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1/design_CPU_System_clk_wiz_1_1_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_uartlite_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_quad_spi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_CPU_System_i/axi_timer_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |design_CPU_System_xbar_0                  |         1|
+|2     |design_CPU_System_auto_pc_0               |         1|
+|3     |design_CPU_System_axi_gpio_0_0            |         1|
+|4     |design_CPU_System_axi_gpio_1_0            |         1|
+|5     |design_CPU_System_axi_gpio_2_0            |         1|
+|6     |design_CPU_System_axi_quad_spi_0_0        |         1|
+|7     |design_CPU_System_axi_timer_0_0           |         1|
+|8     |design_CPU_System_axi_uartlite_0_0        |         1|
+|9     |design_CPU_System_axi_uartlite_1_0        |         1|
+|10    |design_CPU_System_clk_wiz_1_1             |         1|
+|11    |design_CPU_System_mdm_1_1                 |         1|
+|12    |design_CPU_System_microblaze_0_0          |         1|
+|13    |design_CPU_System_microblaze_0_axi_intc_0 |         1|
+|14    |design_CPU_System_rst_clk_wiz_1_100M_1    |         1|
+|15    |design_CPU_System_dlmb_bram_if_cntlr_1    |         1|
+|16    |design_CPU_System_dlmb_v10_1              |         1|
+|17    |design_CPU_System_ilmb_bram_if_cntlr_1    |         1|
+|18    |design_CPU_System_ilmb_v10_1              |         1|
+|19    |design_CPU_System_lmb_bram_1              |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |design_CPU_System_auto_pc               |     1|
+|2     |design_CPU_System_axi_gpio_0            |     1|
+|3     |design_CPU_System_axi_gpio_1            |     1|
+|4     |design_CPU_System_axi_gpio_2            |     1|
+|5     |design_CPU_System_axi_quad_spi_0        |     1|
+|6     |design_CPU_System_axi_timer_0           |     1|
+|7     |design_CPU_System_axi_uartlite_0        |     1|
+|8     |design_CPU_System_axi_uartlite_1        |     1|
+|9     |design_CPU_System_clk_wiz_1             |     1|
+|10    |design_CPU_System_dlmb_bram_if_cntlr    |     1|
+|11    |design_CPU_System_dlmb_v10              |     1|
+|12    |design_CPU_System_ilmb_bram_if_cntlr    |     1|
+|13    |design_CPU_System_ilmb_v10              |     1|
+|14    |design_CPU_System_lmb_bram              |     1|
+|15    |design_CPU_System_mdm_1                 |     1|
+|16    |design_CPU_System_microblaze_0          |     1|
+|17    |design_CPU_System_microblaze_0_axi_intc |     1|
+|18    |design_CPU_System_rst_clk_wiz_1_100M    |     1|
+|19    |design_CPU_System_xbar                  |     1|
+|20    |IBUF                                    |    24|
+|21    |IOBUF                                   |    32|
+|22    |OBUF                                    |     5|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1474.602 ; gain = 513.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1474.602 ; gain = 612.621
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1474.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1474.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+
+Synth Design complete, checksum: cfda5bcd
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1474.602 ; gain = 1011.902
+INFO: [Common 17-1381] The checkpoint 'D:/3/IO/IO.runs/synth_1/design_CPU_System_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_CPU_System_wrapper_utilization_synth.rpt -pb design_CPU_System_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 30 14:25:15 2023...

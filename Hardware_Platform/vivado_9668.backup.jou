@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr 24 18:20:28 2023
+# Process ID: 9668
+# Current directory: D:/3/IO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8356 D:\3\IO\IO.xpr
+# Log file: D:/3/IO/vivado.log
+# Journal file: D:/3/IO\vivado.jou
+# Running On: Swing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 6, Host memory: 17007 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/3/IO/IO.xpr
+update_compile_order -fileset sources_1

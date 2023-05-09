@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# updatemem v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# 
+# Start of session at: Mon Apr 24 21:25:12 2023
+# Process ID: 20112
+# Current directory: D:/3/IO
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/Vitis/2022.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/workspace/YZK_SPI/_ide/bitstream/SPI_System_wrapper.mmi -data E:\workspace\YZK_SPI\Debug\YZK_SPI.elf -proc design_CPU_System_i/microblaze_0 -bit E:/workspace/YZK_SPI/_ide/bitstream/SPI_System_wrapper.bit -out E:/workspace/YZK_SPI/_ide/bitstream/download.bit -force
+# Log file: D:/3/IO/updatemem.log
+# Journal file: D:/3/IO\updatemem.jou
+# Running On: Swing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 6, Host memory: 17007 MB
+#-----------------------------------------------------------
+source D:/Xilinx/Vitis/2022.2/scripts/updatemem/main.tcl -notrace
