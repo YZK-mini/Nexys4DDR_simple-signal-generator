@@ -246,7 +246,7 @@ void timerHandler()
      }
 
     case 0x80:
-    {//屏幕输入8个数据，生成相应离散波形
+    {//屏幕输入6个数据，生成相应离散波形
     	if (!(Point%34))
     		Xil_Out16(spi_SPIDTR,Sc[Point/25]);
     }
@@ -277,7 +277,7 @@ void swHandler()
     // 开关状态同步到 LED 灯
     Xil_Out16(led_DATA, Xil_In16(sw_DATA)&0xff);
 
-    //读取8个数据
+    //读取6个数据
     if (Xil_In16(sw_DATA)&0x3f00)
     	get_data();
 
