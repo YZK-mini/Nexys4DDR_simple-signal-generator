@@ -259,7 +259,7 @@ void timerHandler()
 
 void swHandler()
 {
-    // 读取低  7 位开关，作为波形控制信号
+    // 读取低  8 位开关，作为波形控制信号
     choice = Xil_In16(sw_DATA) & 0xff;
     // 占空比 10%
     if ((Xil_In16(sw_DATA) & 0xc000) == 0xc000)
